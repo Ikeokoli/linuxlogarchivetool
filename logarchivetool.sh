@@ -9,7 +9,8 @@ if [ ! -d "$archive_directory" ]; then
 fi
 
 timestamp="$( date +"%y_%m_%d-%H:%M:%S")"
-filename="log_${timestamp}.tar.gz"
+
+filename="log_archive${timestamp}.tar.gz"
 archive_path="${archive_directory}/${filename}"
 
 echo "Archiving log files..."
